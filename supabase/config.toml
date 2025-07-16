@@ -1,0 +1,5 @@
+
+project_id = "avriexqhqrnrpgjdyznq"
+
+[functions.unlock-fantasy]
+verify_jwt = false

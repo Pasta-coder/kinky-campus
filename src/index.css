@@ -1,0 +1,99 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 45 100% 50%;
+
+    --card: 0 0% 5%;
+    --card-foreground: 45 100% 50%;
+
+    --popover: 0 0% 5%;
+    --popover-foreground: 45 100% 50%;
+
+    --primary: 45 100% 50%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 45 100% 50%;
+
+    --muted: 0 0% 10%;
+    --muted-foreground: 45 50% 70%;
+
+    --accent: 45 90% 45%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 45 100% 50%;
+
+    --border: 45 30% 20%;
+    --input: 45 30% 15%;
+    --ring: 45 100% 50%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 2%;
+    --sidebar-foreground: 45 100% 50%;
+    --sidebar-primary: 45 100% 50%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 45 50% 15%;
+    --sidebar-accent-foreground: 45 100% 50%;
+    --sidebar-border: 45 30% 15%;
+    --sidebar-ring: 45 100% 50%;
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 45 100% 50%;
+
+    --card: 0 0% 5%;
+    --card-foreground: 45 100% 50%;
+
+    --popover: 0 0% 5%;
+    --popover-foreground: 45 100% 50%;
+
+    --primary: 45 100% 50%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 45 100% 50%;
+
+    --muted: 0 0% 10%;
+    --muted-foreground: 45 50% 70%;
+
+    --accent: 45 90% 45%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 45 100% 50%;
+
+    --border: 45 30% 20%;
+    --input: 45 30% 15%;
+    --ring: 45 100% 50%;
+    --sidebar-background: 0 0% 2%;
+    --sidebar-foreground: 45 100% 50%;
+    --sidebar-primary: 45 100% 50%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 45 50% 15%;
+    --sidebar-accent-foreground: 45 100% 50%;
+    --sidebar-border: 45 30% 15%;
+    --sidebar-ring: 45 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
